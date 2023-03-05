@@ -21,17 +21,9 @@ function App() {
   //   },
   // ]
 
-  const loadedData = JSON.parse(localStorage.getItem('items')) || [];
-  loadedData.forEach(item => {
-    if (item.completed) {
-
-    }
-  })
-
   //const [dataSubmit, setDataSubmit] = useState(sampleData);
   const [dataSubmit, setDataSubmit] = useState(loadedData);
   localStorage.setItem('items', JSON.stringify(dataSubmit));
-
 
   const handleCompleted = (e) => {
     const taskId = parseInt(e.target.id);
