@@ -1,0 +1,99 @@
+* {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.task {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.add-btn {
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: large;
+  background-color: rgb(146, 197, 255);
+  border-color: rgb(215, 241, 252);
+}
+
+input[name="task"] {
+  width: 60%;
+  padding: 10px;
+  margin-right: 5px;
+  border: none;
+  text-align: left;
+}
+
+.item {
+  border: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  margin-bottom: 2px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  border: solid;
+  border-radius: 5px;
+  border-color: darkgray;
+  border-width: 1px;
+  margin: 5px;
+  background-color: rgb(247, 247, 247);
+}
+
+.Personal {
+  color: rgb(62, 190, 89);
+}
+
+.Business {
+  color: rgb(101, 140, 212);
+}
+
+.radio {
+  margin: 15px;
+}
+
+input[catColor="Personal"] {
+  color: rgb(62, 190, 89);
+  font-size: larger;
+  font-weight: bold;
+}
+
+input[catColor="Business"] {
+  color: rgb(101, 140, 212);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.App {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.edit {
+  font-weight: bold;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.delete {
+  font-weight: bold;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.chk {
+  cursor: pointer;
+}
