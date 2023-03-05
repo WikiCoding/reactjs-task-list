@@ -21,9 +21,10 @@ function App() {
   //   },
   // ]
   const loadedData = JSON.parse(localStorage.getItem('items')) || [];
+  const sorted = loadedData.sort((a, b) => a.completed ? 1 : -1)
 
   //const [dataSubmit, setDataSubmit] = useState(sampleData);
-  const [dataSubmit, setDataSubmit] = useState(loadedData);
+  const [dataSubmit, setDataSubmit] = useState(sorted);
   localStorage.setItem('items', JSON.stringify(dataSubmit));
 
   const handleCompleted = (e) => {
@@ -37,8 +38,10 @@ function App() {
     } else {
       findTask.completed = false
     }
+    const data = [...elementDel, findTask];
+    const dataSorted = data.sort((a, b) => a.completed ? 1 : -1);
 
-    setDataSubmit([...elementDel, findTask])
+    setDataSubmit(dataSorted);
   }
 
   const handleSubmit = (textInput) => {
