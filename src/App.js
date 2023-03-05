@@ -20,6 +20,7 @@ function App() {
   //     createdAt: new Date()
   //   },
   // ]
+  const loadedData = JSON.parse(localStorage.getItem('items')) || [];
 
   //const [dataSubmit, setDataSubmit] = useState(sampleData);
   const [dataSubmit, setDataSubmit] = useState(loadedData);
